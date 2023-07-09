@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Vidaloka&family=VT323&display=swap");
+
+.monoton {
+  font-family: "Monoton";
+}
+
+.vidaloka {
+  font-family: "Vidaloka", serif;
+}
+
+.vt {
+  font-family: "VT323", monospace;
+}
