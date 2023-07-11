@@ -158,7 +158,8 @@ const DiceGenerator = () => {
             <h3 className="text-lg font-bold mb-2">API Request</h3>
             <div className="rounded-lg bg-gray-100 p-4 mb-4">
               <p>
-                API Endpoint: <code>http://localhost:3000/api/generate</code>
+                API Endpoint:{" "}
+                <code>{`${window.location.hostname}/api/generate`}</code>
               </p>
               <p>
                 Request Body:{" "}
