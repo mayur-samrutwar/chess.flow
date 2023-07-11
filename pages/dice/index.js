@@ -51,7 +51,7 @@ const DiceGenerator = () => {
   };
 
   const handleCopyLink = () => {
-    const endpoint = `http://localhost:3000/api/generate?diceType=${diceType}&numberOfDice=${numberOfDice}`;
+    const endpoint = `${window.location.hostname}/api/generate?diceType=${diceType}&numberOfDice=${numberOfDice}`;
     navigator.clipboard.writeText(endpoint);
     setIsLinkCopied(true);
     setTimeout(() => {
