@@ -4,7 +4,7 @@ import { AuthContext } from "../contexts/AuthContext";
 import { NextChessground, Stockfish } from "next-chessground";
 import engineMove from "../utils/engine-move";
 import React, { useRef, useState } from "react";
-import Chessboard from "../components/Chessboard";
+import Chessboard from "../components/chessboard";
 
 const Playground = () => {
   const router = useRouter();
