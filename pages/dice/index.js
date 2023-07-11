@@ -62,7 +62,7 @@ const DiceGenerator = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-yellow-200 to-yellow-100 flex flex-col items-center justify-center py-10">
       <h2 className="idaloka border-2 px-10 py-4 text-2xl border-black shadow-[5px_5px_0px_0px_rgba(0,0,0)] mb-4 font-bold tracking-wider">
-        Dice Generator
+        Dice on Flow
       </h2>
       <div className="mt-10 flex justify-center items-center">
         <div className="w-full border-dotted border-2 border-gray-300 bg-white p-8 text-center rounded-lg mx-4">
