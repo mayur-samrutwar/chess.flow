@@ -15,6 +15,9 @@
     "@onflow/fcl": "^1.4.1",
     "chess.js": "^1.0.0-beta.6",
     "cm-chessboard": "^7.7.3",
+    "elliptic": "^6.5.4",
+    "html2canvas": "^1.4.1",
+    "ipfs-http-client": "^60.0.1",
     "kokopu-react": "^2.1.0",
     "next": "13.4.8",
     "next-chessground": "^0.13.8",
@@ -23,6 +26,7 @@
     "react-dom": "18.2.0",
     "react-draggable": "^4.4.5",
     "react-icons": "^4.10.1",
+    "rlp": "^3.0.0",
     "socket.io": "^4.7.1",
     "socket.io-client": "^4.7.1",
     "uuid": "^9.0.0"
