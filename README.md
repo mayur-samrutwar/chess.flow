@@ -1,6 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+
+## Welcome!! There are 2 projects in this git repo
+### 1. DiceOnFlow: An on-chain dice generator
+### 2. FlowCandy: Soulbound tokens for access pass
 
 First, run the development server:
 
@@ -10,25 +12,20 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## DiceOnFlow: An on-chain dice generator
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+ - DiceOnFlow asks you for two things: type of dice and number of dice, and based on your query, it generates the dice values in the trusted way, on-chain. So, you can now enjoy your games without any fear of fraud. It also provides you with an API endpoint to integrate the dice generator into your game.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+ - I have also shown an example game, BetOnFlow, Where you can bet your flow token on the outcome of the dice and win a 2X–6X return on your investment.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+for demo: Go to  [http://localhost:3000/dice](http://localhost:3000/dice) and to play, visit  [http://localhost:3000/dice/play](http://localhost:3000/dice/play)
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## FlowCandy: Soulbound tokens for access pass
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+ - FlowCandy - A platform to create a Candy (soulbound NFT tokens with expiry date). You can distribute the candies to your community as access pass, Proof-of-Knowledge, hackathon rewards, contrinutor recognition, PoAP, etc.
+ - The USP of Candies are the expiry date, which make them comsumable within the given timeframe only.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Demo: Go to  [http://localhost:3000/flowcandy](http://localhost:3000/flowcandy)
