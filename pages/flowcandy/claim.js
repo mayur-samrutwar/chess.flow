@@ -21,6 +21,7 @@ const Claim = () => {
   const [maxClaims, setMaxClaims] = useState(10);
   const [whiteListedAddress, setWhiteListedAddress] = useState([]);
   const [file, setFile] = useState(null);
+  const [claimLink, setClaimLink] = useState(null);
 
   useEffect(() => {
     console.log(headline);
@@ -44,7 +45,7 @@ const Claim = () => {
       const transactionId = await fcl
         .send([
           fcl.transaction(mintNFT),
-          fcl.args([fcl.arg("lololol", t.String), fcl.arg(headline, t.String)]),
+          fcl.args([fcl.arg("lololol", t.String), fcl.arg("22", t.String)]),
           fcl.payer(fcl.authz),
           fcl.proposer(fcl.authz),
           fcl.authorizations([fcl.authz]),
@@ -141,7 +142,35 @@ const Claim = () => {
             </div>
           </div>
         </header>
-        <button onClick={getUserNFTs}>Get NFTS</button>
+        {/* <button onClick={getUserNFTs}>Get NFTS</button> */}
+        <div className="flex justify-center w-full border">
+          <button
+            onClick={setupUserHandler}
+            className="my-20 rounded border border-blue-500 bg-blue-500 px-12 py-3 font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring"
+          >
+            Setup User
+          </button>
+        </div>
+
+        <div className="flex justify-center items-center min-h-sreen mt-12">
+          <div className="flex space-x-12">
+            <input
+              type="text"
+              id="headline"
+              placeholder="Enter the candy link to mint"
+              class="w-auto border rounded-full py-3 px-4 w-full text-sm text-gray-800"
+              required
+              value={claimLink}
+              onChange={(e) => setClaimLink(e.target.value)}
+            />
+            <button
+              onClick={mintCandies}
+              className="w-full rounded border border-blue-500 bg-blue-500 px-12 py-3 font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring"
+            >
+              Claim Candy
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );

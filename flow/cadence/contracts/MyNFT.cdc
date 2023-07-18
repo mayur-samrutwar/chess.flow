@@ -14,6 +14,8 @@ pub contract MyNFT: NonFungibleToken {
     pub let ipfsHash: String
     pub var metadata: {String: String}
 
+
+    //@notice metadata should contain details like - headline, desc, creator and expiry date
     init(_ipfsHash: String, _metadata: {String: String}) {
       self.id = MyNFT.totalSupply
       MyNFT.totalSupply = MyNFT.totalSupply + 1
@@ -37,6 +39,8 @@ pub contract MyNFT: NonFungibleToken {
       self.ownedNFTs[myToken.id] <-! myToken
     }
 
+
+    //@notice this function is never called,  hence no transfers, just in case for burning
     pub fun withdraw(withdrawID: UInt64): @NonFungibleToken.NFT {
       let token <- self.ownedNFTs.remove(key: withdrawID) ?? panic("This NFT does not exist")
       emit Withdraw(id: token.id, from: self.owner?.address)
@@ -61,10 +65,6 @@ pub contract MyNFT: NonFungibleToken {
       return reference as! &MyNFT.NFT
   }
 
-  //  pub fun borrowEntireNFT(id: UInt64): &MyNFT.NFT {
-  //    let reference = &self.ownedNFTs[id] as! auth &NonFungibleToken.NFT
-  //    return reference as! &MyNFT.NFT
-  //  }
 
     init() {
       self.ownedNFTs <- {}
