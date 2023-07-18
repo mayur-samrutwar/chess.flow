@@ -67,20 +67,6 @@ const DiceGenerator = () => {
   const handleReward = async () => {
     const amount = "2.0";
     const address = user.addr.toString();
-    // const args = [fcl.arg(amount, t.UFix64), fcl.arg(address, t.Address)];
-
-    // const transactionId = await fcl
-    //   .send([
-    //     fcl.transaction(payFees),
-    //     fcl.args(args),
-    //     fcl.proposer(fcl.authz),
-    //     fcl.payer(serverAuthorization),
-    //     fcl.authorizations([serverAuthorization]),
-    //   ])
-    //   .then(fcl.decode);
-
-    // console.log(transactionId);
-    // setIsPaid(true);
     const response = await fcl.send([
       fcl.transaction(getReward),
       fcl.args([
